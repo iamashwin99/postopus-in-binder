@@ -1,0 +1,16 @@
+.ipynb_checkpoints/*
+.vscode/*
+# Ignore all ocotpus ocutputs
+*.obf
+*.ncdf
+*.cube
+*.vtk
+*.dx
+*.xsf
+*wf-st*
+*.z=0
+*.log
+
+examples/*/exec/*
+examples/*/restart/*
+examples/*/static/*
