@@ -1,4 +1,4 @@
-FROM iamashwin99/postopus-tmp:f9ed62bd5b9022e145835dde6f59ee31cc49d7ebc290b4766d60d167dd7a6d2e
+FROM iamashwin99/postopus-tmp:test
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook jupyterlab
