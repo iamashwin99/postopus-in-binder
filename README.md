@@ -1,8 +1,22 @@
-# Postopus-in-container
+# Postopus-in-Binder
 
 ![image made by DALL·E mini  ](image.jpeg)
 
-Support repository for getting the [OCTOPUS code](http://octopus-code.org/) and [Postopus](https://gitlab.com/octopus-code/postopus) package into a docker container.
-Resources for setting up octopus in docker were forked from [fangohr/octopus-in-spack](https://github.com/fangohr/octopus-in-spack)
+Support repository for getting the [OCTOPUS code](http://octopus-code.org/) and [Postopus](https://gitlab.com/octopus-code/postopus) package into a Binder notebook.
 
-Also providing some hints on how to install postopus.
+The Dockerfile uses ideas from [postopus-in-container](https://github.com/iamashwin99/postopus-in-container) repository for installing postopus and octopus.
+
+# Working with the notebook
+
+The octopus binary should already be in the the path for the docker image, so one can directly call `octopus` in a terminal and can be called via `! octopus` command inside a jupyter cell.
+
+You can start with the [Quick_Start.ipynb](Quick_Start.ipynb) notebook or create your own notebook.
+
+This repository comes with the input files for the following examples:
+
+
+* [h-atom](https://octopus-code.org/new-site/main/tutorial/basics/getting_started/?series=octopus-basics)
+* [benzene](https://www.octopus-code.org/documentation/12/tutorial/basics/visualization/)
+* [methane](https://octopus-code.org/new-site/main/tutorial/basics/time-dependent_propagation/)
+* [recipe](https://octopus-code.org/new-site/main/tutorial/basics/recipe/)
+* [he](https://octopus-code.org/new-site/main/tutorial/model/1d_helium/)
