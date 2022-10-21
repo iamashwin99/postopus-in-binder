@@ -1,10 +1,8 @@
 FROM iamashwin99/postopus-tmp:test
-# install the notebook package
-RUN pip install --no-cache --upgrade pip && \
-    pip install --no-cache notebook jupyterlab
+
 USER root
 # create user with a home directory
-ARG NB_USER=postopus
+ARG NB_USER=postopus_user
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
@@ -19,5 +17,13 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 
+
+
 USER ${NB_USER}   
+# install the notebook package
+RUN pip install --no-cache --upgrade pip && \
+    pip install --no-cache notebook jupyterlab
 WORKDIR ${HOME}
+# add /home/postopus_user/.local/bin' to path
+ENV PATH="${HOME}/.local/bin:${PATH}"
+# ENTRYPOINT ["/bin/bash"]
