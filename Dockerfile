@@ -1,6 +1,12 @@
-FROM iamashwin99/postopus-tmp:test
+FROM fangohr/octopus:12.1
 
 USER root
+RUN apt-get -y update && apt-get -y install python3 \
+            python3-pip \
+            ffmpeg \
+            libsm6 \
+            libxext6 \
+            && rm -rf /var/lib/apt/lists/*  
 # create user with a home directory
 ARG NB_USER=postopus_user
 ARG NB_UID=1000
