@@ -8,6 +8,9 @@ The Dockerfile uses ideas from [postopus-in-container](https://github.com/iamash
 
 # Working with the notebook
 
+Click here to launch the notebook:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/iamashwin99/postopus-in-binder/HEAD?labpath=Quick_Start.ipynb)
+
+
 The octopus binary should already be in the the path for the docker image, so one can directly call `octopus` in a terminal and can be called via `! octopus` command inside a jupyter cell.
 
 You can start with the [Quick_Start.ipynb](Quick_Start.ipynb) notebook or create your own notebook.
