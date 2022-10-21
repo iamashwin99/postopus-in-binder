@@ -22,7 +22,9 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}   
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
-    pip install --no-cache notebook jupyterlab
+    pip install --no-cache notebook jupyterlab && \
+    pip install --no-cache git+https://gitlab.com/octopus-code/postopus.git && \
+    pip install --no-cache "holoviews[recommended]"
 WORKDIR ${HOME}
 # add /home/postopus_user/.local/bin' to path
 ENV PATH="${HOME}/.local/bin:${PATH}"
