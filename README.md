@@ -1,6 +1,6 @@
 # Postopus-in-Binder
 
-![image made by DALL·E mini  ](image.jpeg)
+<!-- ![image made by DALL·E mini  ](image.jpeg) -->
 
 Support repository for getting the [OCTOPUS code](http://octopus-code.org/) and [Postopus](https://gitlab.com/octopus-code/postopus) package into a Binder notebook.
 
