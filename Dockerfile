@@ -6,6 +6,7 @@ RUN apt-get -y update && apt-get -y install python3 \
             ffmpeg \
             libsm6 \
             libxext6 \
+            gnuplot \
             && rm -rf /var/lib/apt/lists/*  
 # create user with a home directory
 ARG NB_USER=postopus_user
