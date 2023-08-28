@@ -8,7 +8,7 @@ The Dockerfile uses ideas from [postopus-in-container](https://github.com/iamash
 
 # Working with the notebook
 
-Click here to launch the notebook:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/iamashwin99/postopus-in-binder/HEAD?labpath=Quick_Start.ipynb)
+Click here to launch the notebook:  [![Binder Public](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/iamashwin99/postopus-in-binder/HEAD?labpath=Quick_Start.ipynb) or at [![Binder MPCDF](https://notebooks.mpcdf.mpg.de/binder/badge_logo.svg)](https://notebooks.mpcdf.mpg.de/binder/v2/git/https%3A%2F%2Fgitlab.mpcdf.mpg.de%2Fkarnada%2Fpostopus-in-binder/HEAD?labpath=Quick_Start.ipynb)
 
 The octopus binary should already be in the the path for the docker image, so one can directly call `octopus` in a terminal and can be called via `! octopus` command inside a jupyter cell.
 
